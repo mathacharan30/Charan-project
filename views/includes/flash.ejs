@@ -1,0 +1,18 @@
+ <%if(success && success.length) { %>
+    <div class="alert alert-success alert-dismissible fade show col-6 offset-3 mt-2" role="alert">
+        <%= success%> 
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<%} %> 
+
+<!-- success is an array so if success dosent exist also then empty array is sent 
+so we ensure that array length is atleast more than or =  1 -->
+
+
+<!--this is for the error message-->
+<%if(error && error.length) { %>
+    <div class="alert alert-danger alert-dismissible fade show col-6 offset-3 mt-2" role="alert">
+        <%= error%> 
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<%} %> 
